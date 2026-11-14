@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcadeVault — Unblocked HTML5 Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>ArcadeVault</h1>
+    <input type="text" id="searchInput" placeholder="Search games..." />
+  </header>
+
+  <main class="container">
+    <nav id="categoryFilters" class="filter-bar"></nav>
+    <section id="gamesGrid" class="games-grid"></section>
+  </main>
+
+  <!-- Game Theater Modal -->
+  <div id="gameModal" class="modal hidden">
+    <div class="modal-header">
+      <button id="closeModalBtn">← Back</button>
+      <h2 id="modalGameTitle">Game Title</h2>
+      <button id="fullscreenBtn">Fullscreen</button>
+    </div>
+    <div id="iframeWrapper" class="iframe-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
